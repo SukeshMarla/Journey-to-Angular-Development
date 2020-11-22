@@ -3,9 +3,9 @@
 <a class="navbar-brand mb-0 h1 underline "
     href='/login' (click)="logout()"><u>Logout</u></a>
 </nav>
-
+<!-- <h1>IsAddNew: {{IsAddNew$|async}}</h1> -->
 <div class="container-fluid pt-3">
-  <div class="card" [hidden]="IsAddNew">
+  <div class="card" *ngIf="!(IsAddNew$|async);else AddNewContainer">
     <h5 class="card-header">Customer List</h5>
     <div class="card-body">
       <div class="card-title">
@@ -20,7 +20,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let item of Customers">
+          <tr *ngFor="let item of (Customers$|async)">
             <td scope="row">{{item.FName}}</td>
             <td>{{item.LName}}</td>
           </tr>
@@ -28,7 +28,8 @@
       </table>
     </div>
   </div>
-  <div class="card" [hidden]="!IsAddNew" ngForm #myForm="ngForm">
+  <ng-template #AddNewContainer>
+  <div class="card" [hidden]="!(IsAddNew$|async)" ngForm #myForm="ngForm">
     <h5 class="card-header">Add New Customer</h5>
     <div class="card-body">
       <div class="form-group">
@@ -65,4 +66,5 @@
       <input type="button" class="btn btn-danger" value="Cancel" (click)="Cancel()">
     </div>
   </div>
+</ng-template>
 </div>

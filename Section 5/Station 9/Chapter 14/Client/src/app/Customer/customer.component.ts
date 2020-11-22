@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Customer } from "../Models/customer";
 import * as jwt_decode from "jwt-decode";
+import { AuthenticationService } from '../Services/authentication.service';
 @Component({
   selector: 'customer',
   templateUrl: './customer.component.html'
@@ -14,7 +15,9 @@ export class CustomerComponent {
   LastName:string;
   @ViewChild('myForm') CustomerForm: NgForm;
   LoginUserFirstName:string="DummyFName";
-  constructor() {
+
+  constructor(private authenticationService: AuthenticationService) {
+
     const decodedToken = jwt_decode(localStorage.token);
     this.LoginUserFirstName=decodedToken.firstName;
     this.IsAddNew = false;
@@ -49,6 +52,6 @@ export class CustomerComponent {
     this.Reset();
   }
   logout(){
-    localStorage.clear();
+       this.authenticationService.logout();
   }
 }
