@@ -7,7 +7,13 @@ Learn Angular Fundamentals, TypeScript, Webpack, Routing, Directives, Components
 ](https://www.amazon.in/Journey-Angular-Development-Sukesh-Marla/dp/9391030149/ref=sr_1_1?dchild=1&keywords=Journey-to-Angular-Development&qid=1634110282&sr=8-1)
 
 ## About Author
-Sukesh Marla is a Managing Director of [Just Compile LLP](https://www.justcompile.com/). Author of [Journey to Angular development](https://www.amazon.in/Journey-Angular-Development-Sukesh-Marla/dp/9391030149/ref=sr_1_1?dchild=1&keywords=Journey-to-Angular-Development&qid=1634110282&sr=8-1) and [Learn MVC in 7 days](https://www.amazon.in/Learn-MVC-Project-7-Days/dp/8183335810/ref=sr_1_2?dchild=1&qid=1634111948&refinements=p_27%3ASukesh+Marla&s=books&sr=1-2) and contributions towards community awarded him multiple times, including MVP awards from [Microsoft](https://mvp.microsoft.com/en-us/PublicProfile/5001289?fullName=Sukesh%20Nagesh%20Marla) ,[CSharp corner](https://www.c-sharpcorner.com/members/sukesh-marla) and [CodeProject](https://www.codeproject.com/script/Membership/View.aspx?mid=5468850).
+Sukesh Marla is a Managing Director of [Just Compile LLP](https://www.justcompile.com/).  It is an IT service based organisation in Mumbai.
+
+He have authored [Journey to Angular development](https://www.amazon.in/Journey-Angular-Development-Sukesh-Marla/dp/9391030149/ref=sr_1_1?dchild=1&keywords=Journey-to-Angular-Development&qid=1634110282&sr=8-1) and [Learn MVC in 7 days](https://www.amazon.in/Learn-MVC-Project-7-Days/dp/8183335810/ref=sr_1_2?dchild=1&qid=1634111948&refinements=p_27%3ASukesh+Marla&s=books&sr=1-2)
+
+His contributions towards community awarded him multiple times, including MVP awards from [Microsoft](https://mvp.microsoft.com/en-us/PublicProfile/5001289?fullName=Sukesh%20Nagesh%20Marla) ,[CSharp corner](https://www.c-sharpcorner.com/members/sukesh-marla) and [CodeProject](https://www.codeproject.com/script/Membership/View.aspx?mid=5468850).
+
+For any enquiry regarding the services he offers or for the feedback contact SukeshMarla@gmail.com
 
 
 <a href="https://in.linkedin.com/in/sukeshmarla"  target="_blank">
