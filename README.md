@@ -23,6 +23,7 @@ Sukesh Marla is a Managing Director of [Just Compile LLP](https://www.justcompil
 ## About Company
 Just Compile believes in teamwork. Irrespective of project size, we believe in executing every project as a team. The team is highly qualified engineers specializing in training, designing, testing, and development.
 
+<div>
 <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/>
 <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
@@ -39,6 +40,7 @@ Just Compile believes in teamwork. Irrespective of project size, we believe in e
 <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/>
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
 <img src="https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white"/>
+</div>
 
 <br/>
 
