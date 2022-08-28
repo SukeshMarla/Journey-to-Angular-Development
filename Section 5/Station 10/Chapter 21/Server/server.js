@@ -35,7 +35,9 @@ app.use(
     credentials: true,
   })
 );
-
+app.get("/geterror",(req,res)=>{
+  throw new Error("Some server error for testing");
+});
 app.post("/signin", (req, res) => {
   const { UserName, Password } = req.body;
   try {
@@ -70,16 +72,16 @@ app.post("/signin", (req, res) => {
 app.use((req, res, next) => {
   var token = req.headers["x-access-token"];
   if (!token)
-    return res.status(401).send({ auth: false, message: "No token provided." });
-
+    return res.status(401).send({ auth: false, message: "Unauthorized user." });
   jwt.verify(token, jwtKey, function (err, decoded) {
     if (err)
-      return res
-        .status(500)
-        .send({ auth: false, message: "Failed to authenticate token." });
+      return res.status(401).send({ auth: false, message: "Unauthorized user." });
     next();
   });
 });
+app.get("/authTest",(req,res)=>{
+  res.send("Authentication successfull");
+})
 app.post("/customers", (req, res) => {
   try {
     const { firstName, lastName } = req.body;
