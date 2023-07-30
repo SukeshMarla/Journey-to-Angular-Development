@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../Services/authentication.service';
 @Component({
@@ -10,12 +10,12 @@ import { AuthenticationService } from '../Services/authentication.service';
   providers: [AuthenticationService],
 })
 export class LoginComponent {
-  loginForm = new FormGroup({
-    UserName: new FormControl('', [
+  loginForm = new UntypedFormGroup({
+    UserName: new UntypedFormControl('', [
       Validators.required,
       Validators.minLength(6),
     ]),
-    Password: new FormControl('', [
+    Password: new UntypedFormControl('', [
       Validators.required,
       Validators.minLength(6),
     ]),
