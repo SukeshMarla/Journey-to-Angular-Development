@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { AuthenticationService } from '../Services/authentication.service';
 import { Observable, Subscription } from 'rxjs';
 @Component({
@@ -17,12 +17,12 @@ export class LoginComponent // implements OnDestroy
 
   // invalidCredentialsSubscription: Subscription;
 
-  loginForm = new FormGroup({
-    UserName: new FormControl('', [
+  loginForm = new UntypedFormGroup({
+    UserName: new UntypedFormControl('', [
       Validators.required,
       Validators.minLength(6),
     ]),
-    Password: new FormControl('', [
+    Password: new UntypedFormControl('', [
       Validators.required,
       Validators.minLength(6),
     ]),
